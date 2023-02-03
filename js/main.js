@@ -9,7 +9,12 @@ $("#btnAdmin").click(function() {
     $("#memb").css("display","block");
     $("#com").css("display","block");
     $("#addChap").css("display","block");
+    $("#li1").css("display","none");
+    $("#li2").css("display","none");
+    $("#li3").css("display","none");
   })
+
+ 
 
 //carousel
 

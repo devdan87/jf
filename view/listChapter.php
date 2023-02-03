@@ -2,6 +2,8 @@
 
 <?php ob_start(); ?>
 
+<?php echo $_SESSION['pseudo']; ?>
+
 <?php
 $db = new PDO('mysql:host=localhost;dbname=book;charset=utf8','root','');
 $showTheChapter= $db->query('SELECT id_chapter,title,content FROM chapter ' );

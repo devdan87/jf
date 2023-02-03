@@ -56,7 +56,8 @@ if (isset($_GET['action'])){
 
             if ($_SESSION["pseudo"]==="admin" && $_SESSION["password"]==="jfbook") {
                 ?><script>$("#btnAdmin").css("display","block")</script>  <?php
-               
+                ?><script>$("#updateChap").css("display","block")</script>  <?php
+                ?><script>$("#deleteChap").css("display","block")</script>  <?php
             }
 
         }else{
@@ -76,6 +77,10 @@ if (isset($_GET['action'])){
     }elseif ($_GET['action'] == "chapter"){
         $page= new Controller;
         $page->showChapter();
+        if ($_SESSION["pseudo"]==="admin" && $_SESSION["password"]==="jfbook"){
+            ?><script>$("#updateChap").css("display","block")</script>  <?php
+            ?><script>$("#deleteChap").css("display","block")</script>  <?php
+        }
     }elseif ($_GET['action'] == "deleteChapter"){
         $page= new Controller;
         $page->validDeleteChapter();

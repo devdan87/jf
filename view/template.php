@@ -26,11 +26,14 @@
 <header>
 <img src="img/logo2.png" alt="logo_avec_livre" class="logo2">
 <ul>
-     <a href="index.php?action=introduction"><li>Accueil</li></a>
-    <a href="index.php?action=chapter"> <li>Chapitres</li></a>
-   <a href="index.php?action=disconnect"> <li>Deconnexion</li> </a>
+     <a href="index.php?action=introduction"><li id="li1">Accueil</li></a>
+    <a href="index.php?action=chapter"> <li id="li2">Chapitres</li></a>
+   <a href="index.php?action=disconnect"> <li id="li3">Deconnexion</li> </a>
   
    <button id="btnAdmin"> 🔑 Admin</button>
+
+
+   
 
 
    
@@ -57,6 +60,9 @@
 <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
      crossorigin=""></script>
+
+
+    
 
 
 <footer>
