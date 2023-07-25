@@ -85,17 +85,6 @@ header #btnAdmin {
 header #btnAdmin:hover {
   background-color: #6EA2CA;
 }
-@-webkit-keyframes move {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(250px);
-  }
-  100% {
-    transform: translateX(-30px);
-  }
-}
 @keyframes move {
   0% {
     transform: translateX(0px);
@@ -120,10 +109,8 @@ header #adminLink a:visited {
   color: black;
 }
 header .logo2:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  animation-name: move;
+  animation-duration: 10s;
 }
 
 h1 {

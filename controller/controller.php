@@ -58,7 +58,8 @@ class Controller{
         if ($checking === true){
             require("view/error.php");
             ?><script>$("#psdExist").css("display","block")</script>  <?php
-           
+            ?><script>$("header").css("display","none")</script><?php
+        ?><script>$("footer").css("display","none")</script><?php
         }
        else{
         $customer= new Member;
@@ -91,6 +92,7 @@ class Controller{
         }else{
           require("view/error.php");
           ?><script>$("#errorCo").css("display","block")</script>  <?php
+      
         }
     }
 

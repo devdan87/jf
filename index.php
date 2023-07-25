@@ -39,6 +39,7 @@ if (isset($_GET['action'])){
         }else{
             require("view/error.php");
             ?><script>$("#enough").css("display","block")</script><?php
+         
         }
 
     }elseif ($_GET['action'] == "validConnexion"){
@@ -60,9 +61,6 @@ if (isset($_GET['action'])){
                 ?><script>$("#deleteChap").css("display","block")</script>  <?php
             }
 
-        }else{
-            require("view/error.php");
-            ?><script>$("#errorCo").css("display","block")</script><?php
         }
 
        

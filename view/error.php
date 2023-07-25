@@ -9,6 +9,8 @@
 <h3 id="enough">⚠️ Oups !! Caractères insuffisants ! <br> Veuillez insérer plus d'un caractère pour l'identifiant et <br>plus de 3 caractères pour le mot de passe !</h3>
 <h3 id="errorCo">⚠️ Oups !! Votre identifiant ou mot de passe est incorrect ! Veuillez réessayer !</h3>
 
+<p class="text">⚠️ Revenir à la page d'inscription ? <a href="index.php?action=inscription" class="text-warning">Aller à la page d'inscription</a></p>
+
 
 
 <?php $content = ob_get_clean(); ?>
