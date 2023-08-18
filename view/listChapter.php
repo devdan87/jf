@@ -1,4 +1,4 @@
-<?php $title = "JF | Voyage en Alaska"; ?>
+<?php $title = "JF | Miracle d'Alaska"; ?>
 
 <?php ob_start(); ?>
 
@@ -16,8 +16,8 @@ while ($Cstdata =  $showTheChapter->fetch()) {
 
 <td><h2 id="newTitle"><?= $Cstdata['title']; ?></h2> </td> <br>
 <td><p id="content"><?= $Cstdata['content']; ?> </p> </td>
-<button id="deleteChap"><a href="index.php?action=deleteChapter&idChap=<?= $Cstdata['id_chapter']; ?>"> supprimer ce chapitre </a></button> 
-<button id="updateChap"><a href="index.php?action=updateChapter&idChap=<?= $Cstdata['id_chapter']; ?>"> modifier ce chapitre </a></button> 
+<button class="deleteChap"><a href="index.php?action=deleteChapter&idChap=<?= $Cstdata['id_chapter']; ?>"> supprimer ce chapitre </a></button> 
+<button class="updateChap"><a href="index.php?action=updateChapter&idChap=<?= $Cstdata['id_chapter']; ?>"> modifier ce chapitre </a></button> 
    
 
 <?php

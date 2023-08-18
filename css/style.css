@@ -19,6 +19,7 @@ body {
 #burger {
   width: 50px;
   height: 50px;
+  display: none;
 }
 
 h1 {
@@ -214,11 +215,11 @@ td {
   font-size: 4em;
 }
 
-#deleteChap {
+.deleteChap {
   float: right;
 }
 
-#updateChap {
+.updateChap {
   float: left;
 }
 
@@ -245,11 +246,12 @@ footer #logo, footer #twt, footer #fb, footer #inst {
   height: 50px;
 }
 
-#deleteChap, #updateChap {
+.deleteChap, .updateChap {
   display: none;
+  font-family: "Lustria", serif;
 }
 
-@media all and (min-width: 320px) and (max-width: 425px) {
+@media all and (min-width: 320px) and (max-width: 499px) {
   h1 {
     font-size: 3em;
   }
@@ -279,7 +281,8 @@ footer #logo, footer #twt, footer #fb, footer #inst {
   header #btnAdmin {
     font-size: 10px;
     position: relative;
-    bottom: 30px;
+    height: 40px;
+    bottom: 40px;
     width: 50px;
   }
   header #adminLink {
@@ -290,6 +293,14 @@ footer #logo, footer #twt, footer #fb, footer #inst {
   header #adminLink li {
     font-size: 15px;
     width: 100%;
+  }
+  header nav {
+    display: none;
+  }
+  #burger {
+    display: block;
+    position: relative;
+    top: 20px;
   }
   .carousel #txt {
     font-size: 2em;
@@ -302,5 +313,32 @@ footer #logo, footer #twt, footer #fb, footer #inst {
   }
   form textarea {
     width: 100%;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    font-size: 10px;
+  }
+  nav {
+    position: relative;
+    bottom: 43px;
+    display: none;
+  }
+  #burger {
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 100px;
+  }
+  header {
+    width: 100%;
+  }
+  header #btnAdmin {
+    height: 40px;
+    width: 100px;
+  }
+  .boutonControle, .boutonStopPlay {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

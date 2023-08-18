@@ -92,7 +92,8 @@ class Controller{
         }else{
           require("view/error.php");
           ?><script>$("#errorCo").css("display","block")</script>  <?php
-      
+          ?><script>$("header").css("display","none")</script><?php
+          ?><script>$("footer").css("display","none")</script><?php
         }
     }
 
@@ -128,7 +129,7 @@ class Controller{
 
         public function newChapter(){
             $chapter = new Chapter;
-            $theChapter= $chapter->updateOneChapter($_POST['lastTitle'],$_GET['var']);
+            $theChapter= $chapter->updateOneChapter($_POST['lastTitle'],$_POST['textContent'], $_GET['var']);
         
             require("view/listChapter.php");
         }

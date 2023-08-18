@@ -26,7 +26,7 @@ if (isset($_GET['action'])){
         $page->inscriptionPage();
     }elseif ($_GET['action'] == "validSub") {
 
-        if (!empty($_POST["nom"]) && !empty($_POST["mdp"]) && !empty($_POST["mail"]) && strlen($_POST["nom"])>1 && strlen($_POST["mdp"])>3) {
+        if (!empty($_POST["nom"]) && !empty($_POST["mdp"]) && !empty($_POST["mail"]) && strlen($_POST["nom"])>1 && strlen($_POST["mdp"])>3 && preg_match('#@#',$_POST['mail'])) {
 
             $_POST["nom"] = strip_tags($_POST["nom"]);
             $_POST["mdp"] = strip_tags($_POST["mdp"]);
@@ -39,7 +39,7 @@ if (isset($_GET['action'])){
         }else{
             require("view/error.php");
             ?><script>$("#enough").css("display","block")</script><?php
-         
+          
         }
 
     }elseif ($_GET['action'] == "validConnexion"){
@@ -76,8 +76,8 @@ if (isset($_GET['action'])){
         $page= new Controller;
         $page->showChapter();
         if ($_SESSION["pseudo"]==="admin" && $_SESSION["password"]==="jfbook"){
-            ?><script>$("#updateChap").css("display","block")</script>  <?php
-            ?><script>$("#deleteChap").css("display","block")</script>  <?php
+            ?><script>$(".updateChap").css("display","block")</script>  <?php
+            ?><script>$(".deleteChap").css("display","block")</script>  <?php
         }
     }elseif ($_GET['action'] == "deleteChapter"){
         $page= new Controller;

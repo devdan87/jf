@@ -1,3 +1,5 @@
+<?php "display_errors" ?>
+
 <?php $title = "JF | Voyage en Alaska"; ?>
 
 <?php ob_start(); ?>

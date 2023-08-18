@@ -1,4 +1,4 @@
-<?php $title = "JF | Voyage en Alaska"; ?>
+<?php $title = "JF | Miracle d'Alaska"; ?>
 
 <?php ob_start(); ?>
 

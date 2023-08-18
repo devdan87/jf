@@ -26,10 +26,10 @@ public function deleteOneChapter($theChapter){
     $reqChapter->execute(array($theChapter));
 }
 
-public function updateOneChapter($title,$id){
+public function updateOneChapter($title,$content,$id){
     $dbChapter = $this->dbConnect();
-    $reqChapter =  $dbChapter->prepare('UPDATE chapter SET title=?  WHERE id_chapter =? ');
-    $reqChapter->execute(array($title,$id));
+    $reqChapter =  $dbChapter->prepare('UPDATE chapter SET title=?, content=?  WHERE id_chapter =? ');
+    $reqChapter->execute(array($title,$content,$id));
     
 }
 

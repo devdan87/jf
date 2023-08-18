@@ -14,6 +14,11 @@ $("#btnAdmin").click(function() {
     $("#li3").css("display","none");
   })
 
+$("#burger").click(function(){
+$("nav").css("display","block");
+$("#burger").css("display","none");
+})
+
  
 
 //carousel
@@ -131,9 +136,6 @@ for (var i = 0; i < myItems.length; i++) {
     .bindPopup(item[0])
     .addTo(myMap);
 }
-
-
-console.log(myItems.length);
 
 
 

@@ -1,5 +1,5 @@
 
-<?php $title = "JF | Voyage en Alaska"; ?>
+<?php $title = "JF | Miracle d'Alaska"; ?>
 
 <?php ob_start(); ?>
 
@@ -11,6 +11,8 @@
 
 	<label>Le titre :</label><br>
     <input type="text" name="lastTitle" id="titleChapter"><br><br>
+
+    <textarea name="textContent" id="comChapter" cols="65" rows="5"></textarea><br><br>
     
 
 

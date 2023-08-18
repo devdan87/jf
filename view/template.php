@@ -34,6 +34,7 @@
 
 <header>
 <img src="img/logo2.png" alt="logo_avec_livre" class="logo2">
+<nav>
 <ul>
      <a href="index.php?action=introduction"><li id="li1">Accueil</li></a>
     <a href="index.php?action=chapter"> <li id="li2">Chapitres</li></a>
@@ -44,11 +45,11 @@
 
    
 
-
+   
    
 </ul>
 
-
+</nav>
 
 <div id="adminLink">
      
@@ -58,7 +59,7 @@
 
 
 </div>
-
+<img src="img/bars-solid.svg" alt="" id="burger">
 </header>
 
 <h1>Miracle d'Alaska</h1>
