@@ -1,4 +1,4 @@
-<?php "display_errors" ?>
+
 
 <?php $title = "JF | Voyage en Alaska"; ?>
 

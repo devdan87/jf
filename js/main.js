@@ -34,7 +34,7 @@ $("#burger").css("display","none");
     "Bienvenu sur le site web dédié au nouveau roman de <br> Jean FORTEROCHE",
     "Vous pouvez accèder librement aux différents chapitres du livre",
     "Vous devez au préalable vous inscrire puis vous connecter si vous souhaiter laisser un commentaire",
-    "Bonne lecture ou plutot bon voyage"
+    "Bonne lecture ou plutot bon voyage !"
   ];
 
 

@@ -5,6 +5,7 @@ require('controller/controller.php');
 
 
 if (isset($_GET['action'])){
+    ini_set('display_errors','off');
     session_start();
     if ($_GET['action'] == "introduction") {
         $page = new Controller;
