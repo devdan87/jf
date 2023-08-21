@@ -10,4 +10,4 @@ ainsi que la liste des utilisateurs inscrits dans la base de données. L'interfa
 permet à toute personne inscrite l'acces aux différents chapitres publiés et de laisser un commentaire.
 
 
-github token : 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
+
