@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<?php echo $_SESSION['pseudo']; ?>
+
 
 <?php
 $db = new PDO('mysql:host=localhost;dbname=book;charset=utf8','root','');

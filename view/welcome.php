@@ -41,9 +41,6 @@ A travers ces différents chapitres vous allez découvrir les différentes étap
 <div id="map"></div>
 </section>
 
-<?php echo $_SESSION['pseudo']; 
-
-?>
 
 
 
