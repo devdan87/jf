@@ -25,6 +25,9 @@ if (isset($_GET['action'])){
     }elseif ($_GET['action'] == "inscription") {
         $page = new Controller;
         $page->inscriptionPage();
+    }elseif($_GET['action'] == "prod"){
+        $page = new Controller;
+        $page->productPage();
     }elseif ($_GET['action'] == "validSub") {
 
         if (!empty($_POST["nom"]) && !empty($_POST["mdp"]) && !empty($_POST["mail"]) && strlen($_POST["nom"])>1 && strlen($_POST["mdp"])>3 && preg_match('#@#',$_POST['mail'])) {

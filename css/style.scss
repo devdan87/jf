@@ -13,6 +13,27 @@ h3{
     text-align: $ta;
 }
 
+#livre1{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+   margin-top: 10px;
+   margin-bottom: 100px;
+
+}
+
+#price{
+    margin-right: 10px;
+}
+
 
 
 #psdExist,#mdpError,#enough,#errorCo{

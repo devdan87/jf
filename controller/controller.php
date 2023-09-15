@@ -22,6 +22,10 @@ class Controller{
         ?><script>$("footer").css("display","none")</script><?php
     }
 
+    public function productPage(){
+        require("view/product.php");
+    }
+
 
     public function welcomePage(){
         require("view/welcome.php");

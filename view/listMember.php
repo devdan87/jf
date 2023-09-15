@@ -37,3 +37,11 @@ while ($Cstdata =  $showCst->fetch()) {
 <?php require('template.php'); ?>
     
 
+<?php
+
+$db = new PDO('mysql:host=localhost;dbname=book;charset=utf8','root','');
+$total = $db->prepare('SELECT COUNT(id_user) FROM user');
+$total->execute();
+$res = $total->fetchColumn();
+echo($res);
+?>
